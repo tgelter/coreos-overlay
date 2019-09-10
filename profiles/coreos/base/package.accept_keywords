@@ -80,3 +80,7 @@ dev-util/checkbashisms
 >=dev-util/strace-5.3 ~amd64 ~arm64
 
 =dev-lang/rust-1.43.1 ~amd64 ~arm64
+
+# required by selinux-dbus, selinux-unconfined
+=sec-policy/selinux-base-policy-9999 **
+=sec-policy/selinux-base-9999 **
