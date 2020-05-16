@@ -80,3 +80,8 @@ dev-util/checkbashisms
 >=dev-util/strace-5.3 ~amd64 ~arm64
 
 =dev-lang/rust-1.43.1 ~amd64 ~arm64
+
+=sec-policy/selinux-base-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-base-policy-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-unconfined-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-virt-2.20190609-r1 ~amd64 ~arm64
