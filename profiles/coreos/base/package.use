@@ -102,3 +102,5 @@ sys-fs/btrfs-progs -zstd
 
 # enable regular expression processing in jq
 app-misc/jq oniguruma
+
+sys-apps/policycoreutils semodule
