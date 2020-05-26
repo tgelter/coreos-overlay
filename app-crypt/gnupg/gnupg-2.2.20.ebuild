@@ -51,6 +51,8 @@ DOCS=(
 
 PATCHES=(
 	"${FILESDIR}/${PN}-2.1.20-gpgscm-Use-shorter-socket-path-lengts-to-improve-tes.patch"
+	"${FILESDIR}/${PN}-allow-import-of-previously-known-keys-even-without-UI.patch"
+	"${FILESDIR}/${PN}-accept-subkeys-with-a-good-revocation-but-no-self-sig.patch"
 )
 
 src_prepare() {
