@@ -1,0 +1,25 @@
+From 8a40a91ec23f4309a0970df70ba29515babd45f0 Mon Sep 17 00:00:00 2001
+From: Sayan Chowdhury <sayan.chowdhury2012@gmail.com>
+Date: Thu, 18 Jun 2020 21:46:11 +0530
+Subject: [PATCH] crypto/algboss: Fix the deadlock issue while instantiating
+ the crypto template
+
+---
+ crypto/algboss.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/crypto/algboss.c b/crypto/algboss.c
+index 535f1f87e6c1..5ebccbd6b74e 100644
+--- a/crypto/algboss.c
++++ b/crypto/algboss.c
+@@ -178,8 +178,6 @@ static int cryptomgr_schedule_probe(struct crypto_larval *larval)
+ 	if (IS_ERR(thread))
+ 		goto err_put_larval;
+
+-	wait_for_completion_interruptible(&larval->completion);
+-
+ 	return NOTIFY_STOP;
+
+ err_put_larval:
+--
+2.21.0
